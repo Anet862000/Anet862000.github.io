@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anet_86 | anet862000.github.io</title>
+    <meta
+      name="description"
+      content="GitHub 공개 프로젝트를 기반으로 구성한 Anet_86 소개 페이지"
+    />
+    <meta name="theme-color" content="#19624b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anet_86 | GitHub Portfolio" />
+    <meta
+      property="og:description"
+      content="모빌리티와 센서를 코드로 연결하는 개발자 Anet_86의 GitHub 기반 소개 페이지"
+    />
+    <meta property="og:url" content="https://anet862000.github.io/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/140033525?v=4" />
+    <link rel="canonical" href="https://anet862000.github.io/" />
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="주요 탐색">
+      <a class="brand" href="#home">Anet_86</a>
+      <nav>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#stack">기술</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">GitHub 기반 프로필</p>
+          <h1>모빌리티와 센서를 코드로 연결하는 개발자, Anet_86</h1>
+          <p class="hero__lead">
+            C++와 Python을 중심으로 스마트 러기지 모듈, 오토카 프로젝트처럼
+            실제 움직이는 시스템을 다루는 프로젝트를 쌓아가고 있습니다.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://github.com/Anet862000" target="_blank" rel="noreferrer">
+              GitHub 보기
+            </a>
+            <a class="button button--ghost" href="#projects">프로젝트 살펴보기</a>
+          </div>
+        </div>
+
+        <aside class="profile" aria-label="GitHub 프로필 요약">
+          <img
+            src="https://avatars.githubusercontent.com/u/140033525?v=4"
+            alt="Anet_86 GitHub avatar"
+            class="profile__avatar"
+          />
+          <div>
+            <p class="profile__name">Anet_86</p>
+            <p class="profile__handle">@Anet862000</p>
+          </div>
+          <dl class="profile__stats" id="profileStats"></dl>
+        </aside>
+      </section>
+
+      <section class="section section--split" id="about">
+        <div>
+          <p class="section__label">About</p>
+          <h2>실물 시스템을 이해하며 만드는 개발자</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            공개된 GitHub 활동을 보면 Anet_86은 단순한 화면 구현보다 센서,
+            모빌리티, 제어 흐름처럼 현실 세계와 맞닿은 문제에 관심을 두고
+            있습니다.
+          </p>
+          <p>
+            프로젝트 설명에는 모빌리티센서공학, 오토카 수업 같은 키워드가
+            드러납니다. 그래서 이 페이지는 “움직이는 대상의 데이터를 읽고,
+            판단하고, 코드로 동작을 만드는 사람”이라는 방향으로 소개합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__heading">
+          <div>
+            <p class="section__label">Projects</p>
+            <h2>최근 공개 프로젝트</h2>
+          </div>
+          <div class="segmented" role="tablist" aria-label="프로젝트 필터">
+            <button class="segmented__button is-active" type="button" data-filter="all">전체</button>
+            <button class="segmented__button" type="button" data-filter="C++">C++</button>
+            <button class="segmented__button" type="button" data-filter="Python">Python</button>
+          </div>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section section--split" id="stack">
+        <div>
+          <p class="section__label">Stack</p>
+          <h2>현재 GitHub에서 보이는 기술 축</h2>
+        </div>
+        <div class="stack-panel">
+          <div class="meter">
+            <span>C++</span>
+            <div class="meter__track"><span style="width: 91%"></span></div>
+          </div>
+          <div class="meter">
+            <span>Python</span>
+            <div class="meter__track"><span style="width: 9%"></span></div>
+          </div>
+          <div class="chips" aria-label="관심 영역">
+            <span>Mobility</span>
+            <span>Sensors</span>
+            <span>Embedded</span>
+            <span>Autocar</span>
+            <span>Physical Computing</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Public GitHub data 기준으로 제작</span>
+      <a href="https://github.com/Anet862000" target="_blank" rel="noreferrer">github.com/Anet862000</a>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
